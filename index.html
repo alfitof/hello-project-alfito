@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <title>Alfito Febriansyah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="images/logo.png" class='logo'/></a>
+            <div class="toggle" onclick="ToggleMenu();"></div>
+            <ul class='navigation'>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Hi,</h2>
+                <h2>I'am <span>Alfito</span></h2>
+                <h2>Web Designer</h2>
+                <a href="mailto:pamanalf@gmail.com" class="Intro-module--hibutton--2bwZu">Greet me!</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/fotobio.png"/>
+            </div>
+        </div>
+        <div class="social">
+            <li><a href="https://id.linkedin.com/in/alfito-febriansyah-25525a207"><img src="images/linkedinlogo.png"></a></li>
+            <li><a href="https://github.com/needsomesauce?tab=repositories"><img src="images/githublogo.png"></a></li>
+            <li><a href="https://www.instagram.com/needsomesauce/"><img src="images/iglogo.png"></a></li>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function ToggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

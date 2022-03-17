@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4172f5;
+    z-index: 1;
+}
+
+section{
+    height: 870px;
+}
+
+header .logo{
+    width: 100px;
+    margin-bottom: -12px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: -15px;
+
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+    margin-top: -65px;
+    
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-top: 6px;
+
+}
+
+.content a{
+    color: #fff;
+}
+
+.content .textBox h2 span{
+    color: #4172f5;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.content .textBox p{
+    color: #333;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 54px;
+    padding: 8px 20px;
+    background: #4172f5;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.content .imgBox img{
+    max-width: 750px;
+    margin-right: 22px;
+}
+
+.social{
+    position: relative;
+    left: 56%;
+    bottom: 180px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.social li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social li img{
+    width: 30px;
+}
+
+.social li:hover{
+    transform: translateY(-15px);
+}
+
+.social li img{
+    max-width: 60px;
+}
+
+@media (max-width: 991px){
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    header{
+        border-bottom: none;
+        padding: 10px 25px;
+    }
+    header .logo{
+        max-width: 100px;
+        justify-content: center;
+
+    }
+    header ul{
+        display: none;
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active{
+        position: fixed;
+        right: 219px;
+        background: url(images/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header ul.navigation.active{
+        position: fixed;
+        top: -200px;
+        left: -10px;
+        width: 455px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
+    header ul li a{
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+
+    .content .imgBox{
+        justify-content: center;
+        position: absolute;
+        
+    }
+
+    .content .imgBox img{
+        max-width: 600px;
+        margin-right: 140px;
+        margin-top: -60px;
+    }
+
+    .content .textBox h2{
+        font-size: 2em;
+        text-align: center;
+        position: relative;
+        margin-left: -25px;;
+    }
+    .content .textBox{
+        text-align: center;
+        margin-top: 485px;
+        margin-right: 150px;
+    }
+    .content .textBox a{
+        justify-content: center;
+        margin-left: -35px;
+
+    }
+    .social{
+        justify-content: center;
+        margin-top: 245px;
+        margin-left: -21px;
+        align-items: center;
+    }
+}
